@@ -3,6 +3,7 @@
 body {
   font-family: "Anta", sans-serif;
   background: linear-gradient(#fdedec, #ff33af, #f633ff);
+  height: 100vh;
 }
 .titulo {
  visibility: hidden;
@@ -188,6 +189,7 @@ ul h2 {
 @media screen and (min-width: 1024px){
 body {
 width: 100%;
+
 }
 .encabezado{
   padding: 0;
