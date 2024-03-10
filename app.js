@@ -1,7 +1,7 @@
 const txt = document.querySelector("#textoaencriptar");
 const alerta = document.querySelector("#alerta");
-// let texto = txt.value;
 
+// funciones que se ejecutaran si es valido el texto a encriptar//
 
 
 function encriptado() {   
@@ -13,12 +13,10 @@ function ocultarMuñeco(){
   document.getElementById("muñecoOculto").style.display="none";
 }
 
-
 function ocultarTexto() {
   document.getElementById("mensajeh1").style.display="none";
   document.getElementById("mensajeh2").style.display="none";
 }
-
 
 function mostrarTextarea() {
   document.querySelector("#textodesencriptado").style.display="block";
@@ -28,10 +26,13 @@ function mostrarCopy() {
   document.getElementById("copy").style.display="block";
 }
 
+// funcion para identificar en el texto, las mayusculas, acentos y otros simbolos que no estan permitidos para el encritado//
+
 function iniciaCodigo() {
   let texto = txt.value;
   let acento = texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, "");
-    //inicia proceso para encriptar//
+
+  //inicia proceso para encriptar//
   if (texto == "") {
     alerta.style.background = "#0A3871";
     alerta.style.color = "#FFFF";
