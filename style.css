@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+body {
+  font-family: "Anta", sans-serif;
+  background: linear-gradient(#fdedec, #ff33af, #f633ff);
+}
+.titulo {
+ visibility: hidden;
+} 
+.encabezado {
+  display: flex ;
+  flex-direction: row;
+}
+.logo {
+  width: 14%;
+  padding: 10px 10px;
+  margin-right: 9rem;
+}
+
+.datos {
+  margin: 20px 0 0 15px;
+}
+
+.textoaencriptar {
+  font-size: 28px;
+  width: 80%;
+  border: none;
+  outline: none;
+  background: none;
+  color: rgb(6, 6, 102);
+  }
+
+.encriptador {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+#muñecoOculto{
+  display: none;
+}
+
+.textodesencriptado {
+  border-radius: 10px; 
+  font-size: 28px;
+  width: 90%;
+  border:none;
+  outline: none;
+  display: none;
+  padding-left: 15px;
+
+}
+.muñeco {
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 1%;
+  width: 25rem;
+  padding: 20px 0;
+  border-radius: 20px;
+}
+.código {
+  margin-top: 50px;
+}
+
+#alerta {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+  margin-left: 30px;
+  color: rgb(35, 35, 85);
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 30px;
+  width: 350px;
+  border-radius: 10px;
+}
+
+.click {
+  text-transform: uppercase;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+  margin: 30px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(80, 3, 80);
+  color: white;
+}
+.btn2 {
+  background-color: white;
+  color:rgb(35, 35, 85) ;
+}
+.btn3 {
+  font-size: 14px;
+  color: white; 
+  padding: 5px ;
+  width: 10rem;
+  margin: 0;
+  margin-top:10px ;
+  margin-left: 7.5rem;
+}
+
+ul h1 {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+ul h2 {
+  font-size: 19px;
+  text-align: center;
+}
+.mensaje {
+  padding: 5px 20px;
+}
+
+#copy {
+  display: none;
+}
+.fin {
+  background-color: #f633ff;
+  }
+.copyright {
+  /* font-size: 20px; */
+    margin-left: 55px ;
+    display: inline-block;
+  }
+
+  .logo2 {
+    width: 4%;
+    display: inline-block;
+  }
+  .logo3 {
+    width: 4%;
+    display: inline-block;  
+  }
+  
+  @media screen and (min-width: 768px) and (max-width:1023px) {
+  .encabezado {
+  display: flex ;
+  flex-direction: row;
+  }
+  .logo {
+  width: 14%;
+  padding: 10px 10px;
+  margin-right: 26rem;
+  }
+  .titulo{
+  visibility:hidden ;
+  }
+  .encriptador{
+      flex-direction: column;
+      overflow-x: hidden;
+      gap: 0;
+    }
+    .btn1 {
+      margin-right: 15rem;
+    }
+    .btn3 {
+      display: flex;
+      justify-content: center;
+      font-size: 14px;
+      padding: 5px 35px;
+      margin: 12px auto 0 auto ;
+    }
+    
+    .muñeco {
+      background-color: white;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      width: 40rem;
+      padding: 20px 0;
+    }
+    .copyright {
+      font-size: 20px;
+      margin-left: 11rem;
+    }
+    .logo2 {
+      width: 3%;
+
+    }
+    .logo3 {
+      width: 3%;
+    }
+  }
+@media screen and (min-width: 1024px){
+body {
+width: 100%;
+}
+.encabezado{
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.logo{
+  width: 10%;
+  padding: 13px 0;
+}
+
+.titulo {
+ visibility: visible; 
+ width: 100%;
+ font-size: 48px;
+ padding: 10px 0 0 150px;
+ font-family: "Anta", sans-serif;
+ margin-left: 125px;
+
+}
+
+.encriptador{
+  flex-direction: row;
+  gap: 350px;
+}
+.muñeco { 
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 350px;
+  position: relative;
+  margin-top: 14px ;
+  margin-left:75px;
+  margin-bottom: 19px ;
+  align-items: flex-end;
+  
+}
+.código{
+  margin-top: 7.3rem;
+}
+#muñecoOculto {
+  display: block;
+  margin-bottom: 30px;
+}
+.copyright {
+  font-size: 20px;
+  margin-left: 31rem;
+
+}
+.logo2 {
+  width: 2%;
+  }
+.logo3 {
+  width: 2%;
+  }
+}
