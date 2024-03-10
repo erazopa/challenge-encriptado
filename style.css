@@ -2,8 +2,13 @@
 
 body {
   font-family: "Anta", sans-serif;
-  background: linear-gradient(#fdedec, #ff33af, #f633ff);
   height: 100vh;
+  background: linear-gradient(#fdedec, #ff33af, #f633ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+
 }
 .titulo {
  visibility: hidden;
@@ -189,7 +194,6 @@ ul h2 {
 @media screen and (min-width: 1024px){
 body {
 width: 100%;
-
 }
 .encabezado{
   padding: 0;
@@ -236,7 +240,6 @@ width: 100%;
 .copyright {
   font-size: 20px;
   margin-left: 31rem;
-
 }
 .logo2 {
   width: 2%;
